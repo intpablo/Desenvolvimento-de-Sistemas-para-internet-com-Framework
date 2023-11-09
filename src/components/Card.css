@@ -1,0 +1,186 @@
+.card {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 5);
+}
+
+.card-background {
+  position: absolute;
+  width: 100%;/* Define o estilo do cartão de informações meteorológicas */
+  .card {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao cartão */
+  }
+  
+  /* Define o estilo da imagem de fundo do cartão */
+  .card-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Redimensiona a imagem para preencher o espaço */
+  }
+  
+  /* Define o estilo do conteúdo dentro do cartão */
+  .card-content {
+    position: absolute;
+    top: 65px;
+    left: 50px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Define a cor do texto */
+    text-align: center;
+    border-radius: 20px;
+    backdrop-filter: blur(3.5px); /* Adiciona um efeito de desfoque ao fundo */
+    background: rgba(0, 0, 0, 0.1); /* Define a cor de fundo do conteúdo */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9); /* Adiciona uma sombra ao conteúdo */
+  }
+  
+  /* Define o estilo do nome da cidade */
+  .cidade {
+    margin-top: 20px;
+    font-size: 35px;
+    font-family: sans-serif; /* Define a fonte do nome da cidade */
+    font-weight: 560; /* Define a espessura da fonte */
+    text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao texto */
+  }
+  
+  /* Define o estilo da data */
+  .data {
+    font-style: oblique; /* Define a fonte em itálico */
+    font-size: 15px;
+    font-family: sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 650; /* Define a espessura da fonte */
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao texto */
+  }
+  
+  /* Define o estilo do contêiner do clima */
+  .content-weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  /* Define o estilo da temperatura */
+  .temperatura {
+    margin-top: -30px;
+    margin-bottom: -30px;
+    font-size: 120px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao texto */
+    margin-right: 5px;
+  }
+  
+  /* Define o estilo do símbolo de grau Celsius */
+  .celsius {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold; /* Define a espessura da fonte */
+    font-size: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao texto */
+  }
+  
+  /* Define o estilo da descrição do clima */
+  .tempo {
+    margin-top: -15px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao texto */
+  }
+  
+  /* Define o estilo do ícone de clima */
+  .icon {
+    margin-top: -24px;
+    width: 80px;
+    height: 80px;
+    filter: drop-shadow(4px 5px 10px rgba(179, 176, 176)); /* Adiciona uma sombra ao ícone */
+  }
+  
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  position: absolute;
+  top: 65px;
+  left: 50px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  backdrop-filter: blur(3.5px);
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+}
+
+.cidade {
+  margin-top: 20px;
+  font-size: 35px;
+  font-family: sans-serif;
+  font-weight: 560;
+  text-shadow: 1px 3px 6px rgba(0, 0, 0, 5);
+}
+  
+.data {
+  font-style: oblique;
+  font-size: 15px;
+  font-family: sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 650;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 10);
+}
+
+.content-weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.temperatura {
+  margin-top: -30px;
+  margin-bottom: -30px;
+  font-size: 120px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 10);
+  margin-right: 5px;
+}
+
+.celsius {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+}
+
+.tempo {
+  margin-top: -15px;
+  margin-bottom:20px;
+  font-size: 30px;
+  font-family: sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  font-weight: 500;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 10);
+}
+
+.icon {
+  margin-top: -24px;
+  width: 80px;
+  height: 80px;
+  filter: drop-shadow(4px 5px 10px rgb(179, 176, 176))
+}
+  
